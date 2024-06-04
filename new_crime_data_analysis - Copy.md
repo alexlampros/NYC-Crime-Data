@@ -2941,7 +2941,7 @@ Since the average house is 655,808, this means that the average property owner l
 
 ![image-2.png](image-2.png)
 
-![image.png](image.png)
+![image.png](image-3.png)
 
 Cluster 2 is highly desirable with high home prices, low crime rates, and low crime trends. Cluster 1 is typified by lower home prices high crime rates and increasing crime rate trends. 
 
