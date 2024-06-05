@@ -234,7 +234,7 @@ Criminals tend to attack victims of the same race and the same age group. Also, 
 <img src="notebook/output_24_0.png" width="500"/>
   
 </p>
-<img src="notebook/download"/>
+<img src="notebook/download.png"/>
 
 
 
