@@ -17,4 +17,4 @@ https://data.census.gov/table/ACSDT5Y2011.B01003?t=Counts,%20Estimates,%20and%20
 For the raw CSV files see ![data](notebook/link to data.txt)
 
 
-![Test Chart](notebook/output_48.png)
+![Test Chart](notebook/output_48_0.png)
