@@ -192,9 +192,9 @@ During the summer, adults are engaging in less structured social activities - va
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <p>
-  <img src="notebook/output_18_0.png" width="500/>
-  
-
+  <img src="notebook/output_18_0.png" width="300"/>
+  <img src="notebook/output_21_0.png" width="300"/>
+    
 </p>
 
 <p>
@@ -204,10 +204,10 @@ For minors, however, we see that the structure and supervision they receive at h
 <img src="notebook/output_21_3.png" width="500"/>
 <img src="notebook/output_21_4.png" width="500"/>
 
-  
 </p>
 
 This is confirmed further if we examine the data by day of the week. We see higher Felonies and Misdemeanors on the weekends, whether it's summer or not.
+
 <p>
   <img src="notebook/output_13_0.png" width="500"/>
   <img src="notebook/output_13_1.png" width="500"/>
