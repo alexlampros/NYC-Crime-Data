@@ -197,9 +197,11 @@ For minors, however, we see that the structure and supervision they receive at h
     <th style="border: none; padding: 10px; text-align: left;">Crime by age group</th>
   </tr>
   <tr>
-    <td style="border: none; padding: 10px;">![crime](notebook/output_18_0.png)</td>
+    <td style="border: none; padding: 10px;"><img src="notebook/output_18_0.png" alt="Crime Analysis Chart" width="700"/></td>
     <td style="border: none; padding: 10px;">
-      <img src="notebook/crime_analysis_chart.png" alt="Crime Analysis Chart" width="300"/>
+
+      
+      
     </td>
   </tr>
   <tr>
@@ -209,7 +211,6 @@ For minors, however, we see that the structure and supervision they receive at h
     </td>
   </tr>
 </table>
-
 
 
 
