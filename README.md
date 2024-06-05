@@ -191,32 +191,19 @@ During summer and weekends, Adults are engaging in less structured social activi
 
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
-<table style="border: none; border-collapse: collapse; width: 100%;">
-  <tr>
-    <th style="border: none; padding: 10px; text-align: left;">Crime Generally</th>
-    <th style="border: none; padding: 10px; text-align: left;">Crime by age group</th>
-  </tr>
-  <tr>
-    <td style="border: none; padding: 10px;"><img src="notebook/output_18_0.png" alt="Crime Analysis Chart" width="700"/></td>
-    <td style="border: none; padding: 10px;">
+<p>
+  <img src="notebook/output_18_0.png"/>
+</p>
 
-      
-      
-    </td>
-  </tr>
-  <tr>
-    <td style="border: none; padding: 10px;">Seasonal Trends</td>
-    <td style="border: none; padding: 10px;">
-      <img src="notebook/seasonal_trends.png" alt="Seasonal Trends" width="300"/>
-    </td>
-  </tr>
-</table>
+<p>
+<img src="notebook/output_21_0.png" width="500"/>
+<img src="notebook/output_21_1.png" width="500"/>
+<img src="notebook/output_21_2.png" width="500"/>
+<img src="notebook/output_21_3.png" width="500"/>
+<img src="notebook/output_21_4.png" width="500"/>
 
+  
+</p>
 
-
-|fdaf|fdfasdfas|
-|----|----------|
-|<div align="left"><img src="notebook/output_18_0.png" alt="Crime Analysis Chart" width="700"/></div> | fdafsdafa|
-|dfada|fafasfasd|
 
 
