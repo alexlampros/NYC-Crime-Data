@@ -238,7 +238,8 @@ Criminals tend to attack victims of the same race and the same age group. Also, 
 
 ## Predicting suspect profile based on victim profile
 
-We can leverage these insights to build a classification model using ```RandomForestClassifier``` to 
+We can leverage these insights to build a classification model using ```RandomForestClassifier``` to predict the profile of the offender based on the victim's age, race, sex, and the type of crime that was committed. This can be potentially beneficial to law enforcement, however we recognize the potential for bias in the data and the risk that this leads to systemic bias in policing. 
+
 
 ```
 # Select features and target variables
