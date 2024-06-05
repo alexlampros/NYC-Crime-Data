@@ -236,13 +236,51 @@ Criminals tend to attack victims of the same race and the same age group. Also, 
 </p>
 <img src="notebook/download.png"/>
 
+## Predicting suspect profile based on victim profile
 
-# Analysis
-We conduct two separate analyses. First we use a ```RandomForestClassifier``` model predict the suspect profile based on victim profile.
+We can leverage these insights to build a classification model using ```RandomForestClassifier``` to 
 
-Next we use ```OLS Regression``` to show the relationship between 
+```
+# Select features and target variables
+features = ['VIC_AGE_GROUP', 'VIC_RACE', 'VIC_SEX', 'LAW_CAT_CD']
+X = data_copy[features]
+y = data_copy[['SUSP_RACE', 'SUSP_AGE_GROUP', 'SUSP_SEX']]
 
-## 1.) Predict the suspect profile based on victim profile
+# Split the data into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+
+# Initialize the base model
+base_model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+# Initialize the multi-output model
+multi_output_model = MultiOutputClassifier(base_model, n_jobs=1)
+
+# Train the model
+multi_output_model.fit(X_train, y_train)
+
+
+# Make predictions on the test set
+y_pred = multi_output_model.predict(X_test)
+
+# Evaluate the model for each target variable
+accuracy_race = accuracy_score(y_test['SUSP_RACE'], y_pred[:, 0])
+accuracy_age_group = accuracy_score(y_test['SUSP_AGE_GROUP'], y_pred[:, 1])
+accuracy_sex = accuracy_score(y_test['SUSP_SEX'], y_pred[:, 2])
+
+Accuracy for SUSP_RACE: 0.72
+Accuracy for SUSP_AGE_GROUP: 0.55
+Accuracy for SUSP_SEX: 0.74
+```
+
+
+
+# Analysis: the relationship between crime rates and housing prices
+
+
+
+
+
 
 
 
