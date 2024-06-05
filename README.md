@@ -14,4 +14,7 @@ Finally we need population data by zip code : For this we look at the Census dat
 
 https://data.census.gov/table/ACSDT5Y2011.B01003?t=Counts,%20Estimates,%20and%20Projections:Population%20Total&g=040XX00US36$8600000&y=2011
 
-For the raw CSV files see ![data]('link to data.txt')
+For the raw CSV files see ![data](notebook/link to data.txt)
+
+
+![Test Chart](notebook/output_48.png)
