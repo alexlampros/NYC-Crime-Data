@@ -225,7 +225,7 @@ _Insight_: Structured and supervised environments generally lead to less crime. 
 
 ### Profile of a criminal
 
-Criminals tend to attack victims of the same race and the same age group. Also, Felonies and Misdemeanors are comitted by a younger group that Violations. 
+Criminals tend to attack victims of the same race and the same age group. Also, Felonies and Misdemeanors are comitted by a younger group that Violations. Finally we see a negative correlation (corr = -0.92. p = 0.027) between felony and violation percentages among the racial groups. 
 
   <img src="notebook/output_9_0.png" width="700"/>
   <span> <img src="notebook/output_8_0.png" width="600"/> </span>
@@ -234,6 +234,7 @@ Criminals tend to attack victims of the same race and the same age group. Also, 
 <img src="notebook/output_24_0.png" width="500"/>
   
 </p>
+<img src="notebook/download"/>
 
 
 
