@@ -192,8 +192,8 @@ During the summer, adults are engaging in less structured social activities - va
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <p>
-  <img src="notebook/output_18_0.png" width="300"/>
-  <img src="notebook/output_21_0.png" width="300"/>
+  <img src="notebook/output_18_0.png" width="400"/>
+  <img src="notebook/output_21_0.png" width="400"/>
     
 </p>
 
