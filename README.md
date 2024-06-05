@@ -185,9 +185,9 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 
 ### Analysis
 
-Generally crime increases during the summer months and on the weekends; however, the reverse is true for minors < 18. 
+Generally crime increases during the summer months; however, the reverse is true for minors < 18. 
 
-During summer and weekends, Adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
+During summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
 
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
@@ -205,5 +205,10 @@ For minors, however, we see that the structure and supervision they receive at h
   
 </p>
 
+This is confirmed further if we examine the data by day of the week. We see higher Felonies and Misdemeanors on the weekends.
+<p>
+  <img src="notebook/output_13_0.png"/>
+  <img src="notebook/output_13_1.png"/>
+</p>
 
 
