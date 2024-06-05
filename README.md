@@ -2,7 +2,7 @@
 
 In this analysis we synthesize NYC crime data with census data, and zillow housing data to understand the effect of crime rates on housing prices at a zip code level. We show that there is a significant negative relationship ( p < 0.0003, R^2 = 0.311) between the trend in crime rate per 100,000 and the percent change in housing prices. On average, if the linear crime rate trend increases by 1 per 100,000 people, this causes the average NYC home to lose $5,312 in value.  Along the way we build a model to predict the profile of a criminal suspect given the profile of a victim. 
 
-## Data Visualization - Idle hands are the Devil's workshop
+## Data Visualization
 
 ### Data
 
@@ -183,7 +183,8 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 <p>2071516 rows × 10 columns</p>
 </div>
 
-### Analysis
+### Idle hands are the Devil's workshop
+
 
 Generally crime increases during the summer months; however, the reverse is true for minors age < 18. 
 
@@ -192,21 +193,21 @@ During the summer, adults are engaging in less structured social activities - va
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <p>
-  <img src="notebook/output_18_0.png" width="410"/>
-  <img src="notebook/output_21_0.png" width="410"/>
+  <img src="notebook/output_18_0.png" width="500"/>
+  <img src="notebook/output_21_0.png" width="500"/>
     
 </p>
 
 <p>
 
-<img src="notebook/output_21_1.png" width="500"/>
 <img src="notebook/output_21_2.png" width="500"/>
+<img src="notebook/output_21_1.png" width="500"/>
 <img src="notebook/output_21_3.png" width="500"/>
 <img src="notebook/output_21_4.png" width="500"/>
 
 </p>
 
-This is confirmed further if we examine the data by day of the week. We see higher Felonies and Misdemeanors on the weekends, whether it's summer or not.
+This is confirmed further if we examine the data by day of the week. For adults, we see higher Felonies and Misdemeanors on the weekends, whether it's summer or not. 
 
 <p>
   <img src="notebook/output_13_0.png" width="500"/>
@@ -214,10 +215,15 @@ This is confirmed further if we examine the data by day of the week. We see high
 </p>
 
 But we see the opposite trend for minors. 
+
 <p>
   <img src="notebook/output_14_3.png" width="500"/>
   <img src="notebook/output_14_5.png" width="500"/>
 </p>
+
+_Insight_: Structured and supervised environments generally lead to less crime. Families tend to do a better job of creating these environments for kids than schools do. This may be particularly relevant for someone considering the benefits of homeschooling their kids, or weighing the costs and benefits of community activities.
+
+### Profile of a criminal
 
 
 
