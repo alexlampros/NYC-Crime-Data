@@ -185,15 +185,19 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 
 ### Analysis
 
-Generally crime increases during the summer months
+Generally crime increases during the summer months and on the weekends; however, the reverse is true for minors < 18. 
+
+During summer and weekends, Adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
+
+For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <table style="border: none; border-collapse: collapse; width: 100%;">
   <tr>
-    <th style="border: none; padding: 10px; text-align: left;">Analysis Description</th>
-    <th style="border: none; padding: 10px; text-align: left;">Visualization</th>
+    <th style="border: none; padding: 10px; text-align: left;">Crime Generally</th>
+    <th style="border: none; padding: 10px; text-align: left;">Crime by age group</th>
   </tr>
   <tr>
-    <td style="border: none; padding: 10px;">Crime Analysis Chart</td>
+    <td style="border: none; padding: 10px;">![](notebook/output_18_0.png)</td>
     <td style="border: none; padding: 10px;">
       <img src="notebook/crime_analysis_chart.png" alt="Crime Analysis Chart" width="300"/>
     </td>
