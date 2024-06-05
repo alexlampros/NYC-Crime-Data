@@ -193,7 +193,7 @@ For minors, however, we see that the structure and supervision they receive at h
 
 <p>
   <img src="notebook/output_18_0.png" width="500/>
-  <img src="notebook/output_21_0.png" width="500"/>
+  
 
 </p>
 
