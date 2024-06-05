@@ -238,7 +238,7 @@ Criminals tend to attack victims of the same race and the same age group. Also, 
 
 
 # Analysis
-We conduct two separate analyses. First we use a ```RandomForest``` model predict the suspect profile based on victim profile
+We conduct two separate analyses. First we use a ```RandomForestClassifier``` model predict the suspect profile based on victim profile
 
 ## 1.) Predict the suspect profile based on victim profile
 
