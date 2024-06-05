@@ -4,5 +4,14 @@ In this analysis we synthesize NYC crime data with census data, and zillow housi
 
 ## Data Visualization - Idle hands are the Devil's workshop
 
+### 
 
+We start by getting NYC crime report data from NYC Open Data : CSV data https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i/about_data
 
+We also get home values by zip code from Zillow Home Value Index (ZHVI All home SFT, Condo/Coop) Time Series Smoothed seasonally adjusted : CSV data https://www.zillow.com/research/data/
+
+Finally we need population data by zip code : For this we look at the Census data.
+
+https://data.census.gov/table/ACSDT5Y2011.B01003?t=Counts,%20Estimates,%20and%20Projections:Population%20Total&g=040XX00US36$8600000&y=2011
+
+For the raw CSV files see ![data]('link to data.txt')
