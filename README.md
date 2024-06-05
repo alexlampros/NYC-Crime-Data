@@ -185,6 +185,33 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 
 ### Analysis
 
-<p align="center">
-  <img src="notebook/output_18_0.png" alt="Crime Analysis Chart" width="500"/>
-</p>
+Generally crime increases during the summer months
+
+<table style="border: none; border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border: none; padding: 10px; text-align: left;">Analysis Description</th>
+    <th style="border: none; padding: 10px; text-align: left;">Visualization</th>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px;">Crime Analysis Chart</td>
+    <td style="border: none; padding: 10px;">
+      <img src="notebook/crime_analysis_chart.png" alt="Crime Analysis Chart" width="300"/>
+    </td>
+  </tr>
+  <tr>
+    <td style="border: none; padding: 10px;">Seasonal Trends</td>
+    <td style="border: none; padding: 10px;">
+      <img src="notebook/seasonal_trends.png" alt="Seasonal Trends" width="300"/>
+    </td>
+  </tr>
+</table>
+
+
+
+
+|fdaf|fdfasdfas|
+|----|----------|
+|<div align="left"><img src="notebook/output_18_0.png" alt="Crime Analysis Chart" width="700"/></div> | fdafsdafa|
+|dfada|fafasfasd|
+
+
