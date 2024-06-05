@@ -267,7 +267,8 @@ y_pred = multi_output_model.predict(X_test)
 accuracy_race = accuracy_score(y_test['SUSP_RACE'], y_pred[:, 0])
 accuracy_age_group = accuracy_score(y_test['SUSP_AGE_GROUP'], y_pred[:, 1])
 accuracy_sex = accuracy_score(y_test['SUSP_SEX'], y_pred[:, 2])
-
+```
+```
 Accuracy for SUSP_RACE: 0.72
 Accuracy for SUSP_AGE_GROUP: 0.55
 Accuracy for SUSP_SEX: 0.74
