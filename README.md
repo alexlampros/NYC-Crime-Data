@@ -279,6 +279,30 @@ Accuracy for SUSP_SEX: 0.74
 
 # Analysis: the relationship between crime rates and housing prices
 
+First we use ```Geopandas``` API to attach a zip code to our crime data. Our zillow housing price data and our census data is divided by zip code, so this is essential for connecting our datasets. 
+
+```
+def get_zip_code(longitude, latitude, zip_codes):
+    
+    try: 
+        # Create a GeoDataFrame for the input point
+        point = gpd.GeoDataFrame(geometry=[Point(longitude, latitude)], crs='EPSG:4326')
+
+        # Perform spatial join to find the corresponding ZIP Code
+        joined = gpd.sjoin(point, zip_codes, how='left', predicate='within')
+
+        # Extract the ZIP Code from the resulting GeoDataFrame
+        if not joined.empty:
+            return joined.iloc[0]['modzcta']  # Use 'modzcta' as the ZIP Code column
+        else:
+            return None
+    except:
+        return None
+
+crime_data['zip_code'] = crime_data.apply(lambda row: get_zip_code(row['Longitude'], row['Latitude'], zip_codes), axis=1)
+crime_data.to_csv('big_data_w_zipcodes.csv')
+```
+
 
 
 
