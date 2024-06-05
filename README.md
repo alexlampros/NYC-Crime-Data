@@ -207,7 +207,7 @@ For minors, however, we see that the structure and supervision they receive at h
 
 </p>
 
-This is confirmed further if we examine the data by day of the week. For adults, we see higher Felonies and Misdemeanors on the weekends, whether it's summer or not. 
+This is further confirmed if we examine the data by day of the week. For adults, we see higher Felonies and Misdemeanors on the weekends, whether it's summer or not. 
 
 <p>
   <img src="notebook/output_13_0.png" width="500"/>
