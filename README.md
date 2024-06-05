@@ -185,18 +185,19 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 
 ### Analysis
 
-Generally crime increases during the summer months; however, the reverse is true for minors < 18. 
+Generally crime increases during the summer months; however, the reverse is true for minors age < 18. 
 
-During summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
+During the summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
 
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <p>
-  <img src="notebook/output_18_0.png"/>
+  <img src="notebook/output_18_0.png" width="500/>
+  <img src="notebook/output_21_0.png" width="500"/>
 </p>
 
 <p>
-<img src="notebook/output_21_0.png" width="500"/>
+
 <img src="notebook/output_21_1.png" width="500"/>
 <img src="notebook/output_21_2.png" width="500"/>
 <img src="notebook/output_21_3.png" width="500"/>
@@ -205,10 +206,23 @@ For minors, however, we see that the structure and supervision they receive at h
   
 </p>
 
-This is confirmed further if we examine the data by day of the week. We see higher Felonies and Misdemeanors on the weekends.
+This is confirmed further if we examine the data by day of the week. We see higher Felonies and Misdemeanors on the weekends, whether it's summer or not.
 <p>
-  <img src="notebook/output_13_0.png"/>
-  <img src="notebook/output_13_1.png"/>
+  <img src="notebook/output_13_0.png" width="500"/>
+  <img src="notebook/output_13_1.png" width="500"/>
 </p>
+
+But we see the opposite trend for minors. 
+<p>
+  <img src="notebook/output_14_3.png" width="500"/>
+  <img src="notebook/output_14_5.png" width="500"/>
+</p>
+
+
+
+
+
+
+
 
 
