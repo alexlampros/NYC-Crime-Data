@@ -276,10 +276,10 @@ Accuracy for SUSP_SEX: 0.74
 ```
 
 Here is an example of the model in action: 
-Our victim is a **Male** 
-His age is between **25-44**
-His race is **Black**
-And he was a victim of a **Felony** offense
+<p>Our victim is a **Male** </p>
+<p>His age is between **25-44**</p>
+<p>His race is **Black**</p>
+<p>And he was a victim of a **Felony** offense</p>
 
 ```
 # Example victim data
