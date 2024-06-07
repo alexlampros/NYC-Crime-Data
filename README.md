@@ -303,6 +303,20 @@ crime_data['zip_code'] = crime_data.apply(lambda row: get_zip_code(row['Longitud
 crime_data.to_csv('big_data_w_zipcodes.csv')
 ```
 
+we thenk look at crime per 100,000 by zip code and capture the trend in crime rate ```Beta``` 
+<p>
+  <img src="notebook/output_46_0.png" width="500"/>
+  <img src="notebook/output_46_1.png" width="500"/>
+  <img src="notebook/output_46_2.png" width="500"/>
+  <img src="notebook/output_46_3.png" width="500"/>
+    
+</p>
+
+
+
+
+
+
 
 
 Once we merge our data together, we get a dataset that looks like this 
