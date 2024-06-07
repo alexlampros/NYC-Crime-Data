@@ -498,8 +498,57 @@ Once we merge our data together, we get a dataset that looks like this
 <p>1406052 rows × 11 columns</p>
 </div>
 
+And we are ready to run our regression
+```
+df = df.dropna(subset=['Beta', 'chng_housing_price_pct'])
 
+# Define the independent (X) and dependent (y) variables
+X = df[['Beta']]
+y = df['chng_housing_price_pct']
 
+# Add a constant to the independent variables matrix
+X = sm.add_constant(X)
+
+# Perform OLS regression
+model = sm.OLS(y, X).fit()
+
+# Print the regression results
+print(model.summary())
+```
+```
+                              OLS Regression Results                              
+==================================================================================
+Dep. Variable:     chng_housing_price_pct   R-squared:                       0.311
+Model:                                OLS   Adj. R-squared:                  0.311
+Method:                     Least Squares   F-statistic:                 2.811e+05
+Date:                    Tue, 04 Jun 2024   Prob (F-statistic):               0.00
+Time:                            21:04:39   Log-Likelihood:            -2.0037e+05
+No. Observations:                  622595   AIC:                         4.007e+05
+Df Residuals:                      622593   BIC:                         4.008e+05
+Df Model:                               1                                         
+Covariance Type:                nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.9153      0.000   2003.055      0.000       0.914       0.916
+Beta          -0.0081   1.53e-05   -530.159      0.000      -0.008      -0.008
+==============================================================================
+Omnibus:                     6499.228   Durbin-Watson:                   0.003
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7626.804
+Skew:                           0.195   Prob(JB):                         0.00
+Kurtosis:                       3.377   Cond. No.                         32.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+```
+```
+print(final_merged_data['HousingPrice'].mean())
+print(final_merged_data['HousingPrice'].mean()*0.0081)
+
+655808.0416420082
+5312.045137300266
+```
 
 
 
