@@ -186,7 +186,7 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 ### Idle hands are the Devil's workshop
 
 
-Generally crime increases during the summer months; however, the reverse is true for minors age < 18. 
+This is an interesting result! Generally crime increases during the summer months, except the reverse is true for minors age < 18. 
 
 During the summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
 
