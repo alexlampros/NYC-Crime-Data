@@ -211,7 +211,7 @@ This is further confirmed if we examine the data by day of the week. For adults,
 
 <p>
   <img src="notebook/output_13_0.png" width="500"/>
-  <img src="notebook/output_13_1.png" width="500"/>
+  <img src="notebook/output_13_1.png" width="500"  style="border: 2px solid red;"/>
 </p>
 
 But we see the opposite trend for minors. 
