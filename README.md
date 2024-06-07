@@ -306,9 +306,9 @@ print('Predicted Suspect Age Group:', predicted_suspect_age_group)
 print('Predicted Suspect Sex:', predicted_suspect_sex)
 ```
 ```
-Predicted Suspect Race: ['BLACK']
-Predicted Suspect Age Group: ['25-44']
-Predicted Suspect Sex: ['M']
+Predicted Suspect Race: ['BLACK']      (72% confidence)
+Predicted Suspect Age Group: ['25-44'] (55% confidence)
+Predicted Suspect Sex: ['M']           (74% confidence)   
 ```
 
 
