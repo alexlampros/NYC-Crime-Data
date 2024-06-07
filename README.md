@@ -221,7 +221,7 @@ But we see the opposite trend for minors.
   <img src="notebook/output_14_5.png" width="500"/>
 </p>
 
-_Insight_: Structured and supervised environments generally lead to less crime. Families tend to do a better job of creating these environments for kids than schools do. This may be particularly relevant for someone considering the benefits of homeschooling their kids, or weighing the costs and benefits of community activities.
+_**Insight**_: Structured and supervised environments generally lead to less crime. Families tend to do a better job of creating these environments for kids than schools do. This may be particularly relevant for someone considering the benefits of homeschooling their kids, or weighing the costs and benefits of community activities.
 
 ### Profile of a criminal
 
