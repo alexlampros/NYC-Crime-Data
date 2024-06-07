@@ -275,6 +275,47 @@ Accuracy for SUSP_AGE_GROUP: 0.55
 Accuracy for SUSP_SEX: 0.74
 ```
 
+Here is an example of the model in action: 
+Our victim is a **Male** 
+His age is between **25-44**
+His race is **Black**
+And he was a victim of a **Felony** offense
+
+```
+# Example victim data
+new_victim_data = {
+    'VIC_AGE_GROUP': ['25-44'],
+    'VIC_RACE': ['BLACK'],
+    'VIC_SEX': ['M'],
+    'LAW_CAT_CD': ['FELONY']
+}
+
+# Convert to DataFrame
+new_victim_df = pd.DataFrame(new_victim_data)
+
+# Encode the new data using the same LabelEncoders
+new_victim_df['VIC_AGE_GROUP'] = le_vic_age_group.transform(new_victim_df['VIC_AGE_GROUP'])
+new_victim_df['VIC_RACE'] = le_vic_race.transform(new_victim_df['VIC_RACE'])
+new_victim_df['VIC_SEX'] = le_vic_sex.transform(new_victim_df['VIC_SEX'])
+new_victim_df['LAW_CAT_CD'] = le_law_cat_cd.transform(new_victim_df['LAW_CAT_CD'])
+
+# Make predictions
+predicted_suspect_profile = multi_output_model.predict(new_victim_df)
+
+predicted_suspect_race = le_susp_race.inverse_transform(predicted_suspect_profile[:, 0])
+predicted_suspect_age_group = le_susp_age_group.inverse_transform(predicted_suspect_profile[:, 1])
+predicted_suspect_sex = le_susp_sex.inverse_transform(predicted_suspect_profile[:, 2])
+
+print('Predicted Suspect Race:', predicted_suspect_race)
+print('Predicted Suspect Age Group:', predicted_suspect_age_group)
+print('Predicted Suspect Sex:', predicted_suspect_sex)
+```
+```
+Predicted Suspect Race: ['BLACK']
+Predicted Suspect Age Group: ['25-44']
+Predicted Suspect Sex: ['M']
+```
+
 
 
 # Analysis: the relationship between crime rates and housing prices
