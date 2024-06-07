@@ -576,17 +576,18 @@ Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7626.804
 Skew:                           0.195   Prob(JB):                         0.00
 Kurtosis:                       3.377   Cond. No.                         32.2
 ==============================================================================
-
-Notes:
-[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 ```
 ```
 print(final_merged_data['HousingPrice'].mean())
 print(final_merged_data['HousingPrice'].mean()*0.0081)
 
-655808.0416420082
-5312.045137300266
+655,808.04
+5,312.04
 ```
+
+There is a very significant negative relationship between the linear trend in crime rate per 100,000 people in a zip code, and the percent change in housing prices in that zip code. 
+
+This linear trend in crime rate per 100,000 people explains 31% of the variance in housing prices. And for each unit increase in that crime trend, the average home loses $5,312 in value. This is a substantial enough amount that it should encourage homeowners to invest in neighborhood safety initiatives. 
 
 
 
