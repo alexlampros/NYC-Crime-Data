@@ -515,6 +515,8 @@ model = sm.OLS(y, X).fit()
 # Print the regression results
 print(model.summary())
 ```
+<img src="notebook/output_48_0.png" width="700"/>
+
 ```
                               OLS Regression Results                              
 ==================================================================================
