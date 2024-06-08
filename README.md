@@ -189,14 +189,12 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 ### Idle hands are the Devil's workshop
 
 
-This is an interesting result! Generally crime increases during the summer months, except the reverse is true for minors age < 18. 
-
-During the summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. 
-
-For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
-
+For Adults we see crime increases during the summer months, however we see that crime declines for minors during summer. During the summer, adults are engaging in less structured social activities - vacations, parties, nightlife, and other outdoof activities. This creates more opportunitiy for crime, whereas work provides a structured activity that decreases crime. For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
 <img src="notebook/crime_data_thumbnail.png"/>
+
+We can verify this by looking at crime by day of the week during summer and non-summer months. Here we see that crime increases on the weekends for adults and decrease for minors. This rules out the possibility that the summer heat is causing aggrivation. 
+
 <img src="notebook/Weekly_analysis.png"/>
 
 
