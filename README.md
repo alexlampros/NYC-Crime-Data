@@ -185,6 +185,7 @@ For the raw CSV files see: https://drive.google.com/drive/folders/19QnftB8seO4_H
 <p>2071516 rows × 10 columns</p>
 </div>
 
+
 ### Idle hands are the Devil's workshop
 
 
@@ -194,124 +195,13 @@ During the summer, adults are engaging in less structured social activities - va
 
 For minors, however, we see that the structure and supervision they receive at home (or at a summer job) is much better than what they receive at schools. 
 
-<p>
-  <img src="notebook/output_18_0.png" width="500"/>
-  <img src="notebook/output_21_0.png" width="500"/>
-    
-</p>
 
-<p>
+<img src="notebook/crime_data_thumbnail.png"/>
+<img src="notebook/Weekly_analysis.png"/>
 
-<img src="notebook/output_21_2.png" width="500"/>
-<img src="notebook/output_21_1.png" width="500"/>
-<img src="notebook/output_21_3.png" width="500"/>
-<img src="notebook/output_21_4.png" width="500"/>
 
-</p>
-
-This is further confirmed if we examine the data by day of the week. For adults, we see higher Felonies and Misdemeanors on the weekends, whether it's summer or not. 
-
-<p>
-  <img src="notebook/output_13_0.png" width="500"/>
-  <img src="notebook/output_13_1.png" width="500"  style="border: 2px solid red;"/>
-</p>
-
-But we see the opposite trend for minors. 
-
-<p>
-  <img src="notebook/output_14_3.png" width="500"/>
-  <img src="notebook/output_14_5.png" width="500"/>
-</p>
 
 _**Insight**_: Structured and supervised environments generally lead to less crime. Families tend to do a better job of creating these environments for kids than schools do. This may be particularly relevant for someone considering the benefits of homeschooling their kids, or weighing the costs and benefits of community activities.
-
-### Profile of a criminal
-
-Criminals tend to attack victims of the same race and the same age group. Also, Felonies and Misdemeanors are comitted by a younger group that Violations. Finally we see a strong negative correlation (corr = -0.92. p = 0.027) between felony and violation percentages among the racial groups. 
-
-  <img src="notebook/output_9_0.png" width="700"/>
-  <span> <img src="notebook/output_8_0.png" width="600"/> </span>
-<p>
-  
-<img src="notebook/output_24_0.png" width="500"/>
-  
-</p>
-<img src="notebook/download.png"/>
-
-## Predicting suspect profile based on victim profile
-
-We can leverage these insights to build a classification model using ```RandomForestClassifier``` to predict the profile of the offender based on the victim's age, race, sex, and the type of crime that was committed. This can be potentially beneficial to law enforcement, however we recognize the potential for bias in the data and the risk that this leads to systemic bias in policing. 
-
-
-```
-# Select features and target variables
-features = ['VIC_AGE_GROUP', 'VIC_RACE', 'VIC_SEX', 'LAW_CAT_CD']
-X = data_copy[features]
-y = data_copy[['SUSP_RACE', 'SUSP_AGE_GROUP', 'SUSP_SEX']]
-
-# Split the data into training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-
-# Initialize the base model
-base_model = RandomForestClassifier(n_estimators=100, random_state=42)
-
-# Initialize the multi-output model
-multi_output_model = MultiOutputClassifier(base_model, n_jobs=1)
-
-# Train the model
-multi_output_model.fit(X_train, y_train)
-
-
-# Make predictions on the test set
-y_pred = multi_output_model.predict(X_test)
-
-# Evaluate the model for each target variable
-accuracy_race = accuracy_score(y_test['SUSP_RACE'], y_pred[:, 0])
-accuracy_age_group = accuracy_score(y_test['SUSP_AGE_GROUP'], y_pred[:, 1])
-accuracy_sex = accuracy_score(y_test['SUSP_SEX'], y_pred[:, 2])
-```
-```
-Accuracy for SUSP_RACE: 0.72
-Accuracy for SUSP_AGE_GROUP: 0.55
-Accuracy for SUSP_SEX: 0.74
-```
-
-Here is an example of the model in action: 
-```
-# Example victim data
-new_victim_data = {
-    'VIC_AGE_GROUP': ['25-44'],
-    'VIC_RACE': ['BLACK'],
-    'VIC_SEX': ['M'],
-    'LAW_CAT_CD': ['FELONY']
-}
-
-# Convert to DataFrame
-new_victim_df = pd.DataFrame(new_victim_data)
-
-# Encode the new data using the same LabelEncoders
-new_victim_df['VIC_AGE_GROUP'] = le_vic_age_group.transform(new_victim_df['VIC_AGE_GROUP'])
-new_victim_df['VIC_RACE'] = le_vic_race.transform(new_victim_df['VIC_RACE'])
-new_victim_df['VIC_SEX'] = le_vic_sex.transform(new_victim_df['VIC_SEX'])
-new_victim_df['LAW_CAT_CD'] = le_law_cat_cd.transform(new_victim_df['LAW_CAT_CD'])
-
-# Make predictions
-predicted_suspect_profile = multi_output_model.predict(new_victim_df)
-
-predicted_suspect_race = le_susp_race.inverse_transform(predicted_suspect_profile[:, 0])
-predicted_suspect_age_group = le_susp_age_group.inverse_transform(predicted_suspect_profile[:, 1])
-predicted_suspect_sex = le_susp_sex.inverse_transform(predicted_suspect_profile[:, 2])
-
-print('Predicted Suspect Race:', predicted_suspect_race)
-print('Predicted Suspect Age Group:', predicted_suspect_age_group)
-print('Predicted Suspect Sex:', predicted_suspect_sex)
-```
-```
-Predicted Suspect Race: ['BLACK']      (72% confidence)
-Predicted Suspect Age Group: ['25-44'] (55% confidence)
-Predicted Suspect Sex: ['M']           (74% confidence)   
-```
 
 
 ## Analysis
